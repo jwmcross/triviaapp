@@ -66,26 +66,6 @@ public class TriviaService {
 
         return response;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public ResponseEntity<ResultResponse> answerTrivia(Answer answer, long id) {
         Optional<TriviaEntity> trivia = this.triviaRepository.findById(id);
         if (trivia.isEmpty()) {
@@ -104,23 +84,3 @@ public class TriviaService {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
